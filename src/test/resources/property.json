@@ -1,0 +1,30 @@
+{
+    "LocalCacheSize" : 10,
+    "SchemaFilename" : "/data.avsc",
+
+    "consumer" : {
+        "type" : "mq",
+        "ConsumerGroupName" : "consumer",
+        "NamesrvAddr" : "10.10.19.25:9876",
+        "Topic" : "test",
+        "MessageBatchMaxSize" : "10"
+    },
+    "producer" : {
+        "type" : "cassandra",
+        "Keyspace" : "testkeyspace",
+        "CoordinatorAddress" : "192.168.120.58",
+        "UserName" : "",
+        "Password" : "",
+        "TableName" : "testtable",
+        "TimestampKey" : "",
+        "TimestampFieldKey" : "",
+        "filterHasField" : "",
+        "filterHasNoField" : "",
+        "isUpdate" : true,
+        "updateFields" : [],
+        "updatePrimaryKey" : ""
+    },
+    "keymap" : {
+        "before" : "after"
+    }
+}

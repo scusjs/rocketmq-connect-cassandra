@@ -1,0 +1,10 @@
+{
+   "namespace": "test",
+   "type": "record",
+   "name": "test",
+   "fields": [
+      {"name": "name1", "type": "string"},
+      {"name": "id", "type": "int"},
+      {"name": "map1", "type": [{"type": "map","values": "string"}, "null"]}
+   ]
+}
